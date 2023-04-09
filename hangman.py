@@ -28,7 +28,6 @@ while '_' in dashes:
     if player_guess not in guess_list:
         for i in range(0, len(hidden_word)):
             if hidden_word[i] == player_guess:
-                print(f'Yes! Your {player_guess} guess is in the word.')
                 dashes[i] = player_guess
 
     if player_guess not in hidden_word:
